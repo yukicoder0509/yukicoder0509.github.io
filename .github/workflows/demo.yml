@@ -22,7 +22,7 @@ jobs:
           npm install -g htmlhint stylelint eslint
 
       - name: Enable package-lock files
-        run: npm install
+        run: npm shrinkwrap
 
       - uses: actions/setup-node@v3
         with:
