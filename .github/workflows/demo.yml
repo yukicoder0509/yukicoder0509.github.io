@@ -22,7 +22,9 @@ jobs:
           npm install -g htmlhint stylelint eslint
 
       - name: Enable package-lock files
-        run: npm config set package-lock true
+        run: |
+          npm config set package-lock true
+          npm install
 
       - uses: actions/setup-node@v3
         with:
