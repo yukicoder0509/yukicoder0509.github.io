@@ -20,8 +20,9 @@ jobs:
       - name: Install linting dependencies
         run: |
           npm install -g htmlhint stylelint eslint
+
       - name: Enable package-lock files
-        run: npm set-package-lock true
+        run: npm config set package-lock false
 
       - uses: actions/setup-node@v3
         with:
