@@ -1,0 +1,30 @@
+name: Lint and Prettier Check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint-and-prettier:
+    name: Run ESLint and Prettier
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18  # Use the Node.js version of your project
+          cache: 'npm'       # Cache dependencies for faster installs
+
+      - name: Install dependencies
+        run: npm ci  # Ensures clean install without modifying package-lock.json
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Check Prettier formatting
+        run: npx prettier --check .
