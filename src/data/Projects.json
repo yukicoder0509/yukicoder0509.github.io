@@ -1,0 +1,22 @@
+{
+    "MyProjects": [
+        {
+            "id": "1",
+            "title": "CommonGround Project",
+            "description": "We are building a platform that will help people engage in rational discussions and share their thoughts on various topics, especially social issues.",
+            "link": "https://github.com/commonground-project"
+        },
+        {
+            "id": "2",
+            "title": "Project 2",
+            "description": "This is a project description",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": "3",
+            "title": "Project 3",
+            "description": "This is a project description",
+            "link": "https://www.google.com"
+        }
+    ]
+}
