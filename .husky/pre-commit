@@ -1,2 +1,2 @@
 npm run lint
-pnpm exec prettier --ignore-unknown --write .
+npm exec prettier --ignore-unknown --write .
