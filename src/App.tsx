@@ -5,7 +5,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import { Layout } from "./components/Layout";
+import { Layout } from "./components/AppShell/Layout.tsx";
 
 export default function App() {
     const router = createBrowserRouter(

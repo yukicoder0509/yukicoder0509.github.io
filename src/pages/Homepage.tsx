@@ -1,20 +1,15 @@
-import myProjectData from "../data/Projects.json";
-import ProjectList from "../components/ProjectList";
+import WelcomeTitle from "../components/Home/WelcomeTitle.tsx";
+import SelfIntroCard from "../components/Home/SelfIntroCard.tsx";
 
 export default function Homepage() {
-    const projects = myProjectData.MyProjects;
-
     return (
-        <div className="flex h-full flex-col items-center">
-            <div className="mt-4 max-w-xl rounded-lg bg-blue-200 p-4">
-                <h1 className="text-lg font-bold">About Me</h1>
-                <p className="mt-2">
-                    I'm 楊皓程. Study in CS dept, National Yang Ming Chiao Tung
-                    University, Taiwan. Currently focus on web development, and
-                    heading toward a full-stack developer.
-                </p>
+        <div className="mx-auto mt-2.5 flex h-full max-w-4xl flex-col items-center px-5">
+            <div className="my-9 w-full">
+                <WelcomeTitle />
             </div>
-            <ProjectList projectList={projects} />
+            <div className="mx-6 my-9 w-full md:mx-0">
+                <SelfIntroCard />
+            </div>
         </div>
     );
 }
