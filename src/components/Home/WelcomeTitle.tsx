@@ -5,7 +5,7 @@ export default function WelcomeTitle() {
                 Hello, I’m 楊皓程
             </div>
             <div className="mt-7 w-full text-center font-serif text-3xl md:text-left md:text-5xl">
-                A Frontend Engineer :D
+                A Frontend Engineer 😆
             </div>
         </>
     );
