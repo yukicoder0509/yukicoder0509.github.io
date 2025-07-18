@@ -8,7 +8,7 @@ export default function Homepage() {
             <Helmet>
                 <title>Home</title>
             </Helmet>
-            <div className="mx-auto mt-2.5 flex h-full max-w-4xl flex-col items-center px-5">
+            <div className="mx-auto mt-2.5 flex h-full max-w-5xl flex-col items-center px-5">
                 <div className="my-9 w-full">
                     <WelcomeTitle />
                 </div>

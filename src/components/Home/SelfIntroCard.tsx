@@ -7,17 +7,45 @@ export default function SelfIntroCard() {
                 loading="lazy"
                 className="size-40 rounded-full md:size-50"
             />
-            <div className="font-serif text-xl md:max-w-1/2">
+            {/* Desktop version full self intro*/}
+            <div className="hidden font-serif text-xl md:block md:max-w-10/12">
+                <h1 className="font-semibold">About Me</h1>
                 <p>
-                    Currently study Computer Science at National Yang Ming Chiao
-                    Tung University, Taiwan. I am a Frontend Engineer with a
-                    passion for education and open source. I love to create
-                    things that make people’s lives easier and more enjoyable.
+                    I’m currently studying Computer Science at National Yang
+                    Ming Chiao Tung University, Taiwan. My journey in tech
+                    started from a love for creating things that are both
+                    functional and delightful.
                 </p>
+                <h1 className="mt-8 font-semibold">What I Do</h1>
                 <p>
-                    I serve in NYCU Software Development Club as a frontend
-                    developer, education, and project manager. We aim to build
-                    welcoming community for students to learn and grow together.
+                    As a frontend engineer, I’m passionate about education and
+                    open source. I believe great software isn’t just about
+                    code—it’s about empowering people. That’s why I’ve
+                    contributed to educational tools, led frontend initiatives,
+                    and mentored students through the NYCU Software Development
+                    Club, where I help run training programs and manage real
+                    production projects.
+                </p>
+                <p className="mt-4">
+                    I’m especially drawn to problems where engineering meets
+                    design, and where empathy meets execution. Whether it’s
+                    building internal tools that save people hours, or writing
+                    guides that help beginners take their first step—I want to
+                    be the kind of developer who leaves things better than I
+                    found them.
+                </p>
+            </div>
+            {/* Mobile version compact self intro */}
+            <div className="block font-serif text-xl md:hidden">
+                <h1 className="font-semibold">About Me</h1>
+                <p>
+                    Currently studying CS @ NYCU and leading frontend
+                    initiatives in our software dev club.
+                </p>
+                <h1 className="mt-8 font-semibold">What I Do</h1>
+                <p>
+                    Frontend engineer. Educator. Builder of things that
+                    (hopefully) make life better.
                 </p>
             </div>
         </div>
