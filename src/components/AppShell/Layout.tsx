@@ -4,10 +4,10 @@ import MotionBackground from "./MotionBackground.tsx";
 
 export function Layout() {
     return (
-        <>
+        <div className="flex h-screen flex-col">
             <Header />
             <MotionBackground />
             <Outlet />
-        </>
+        </div>
     );
 }
