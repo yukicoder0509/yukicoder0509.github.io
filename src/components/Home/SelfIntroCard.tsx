@@ -22,8 +22,15 @@ export default function SelfIntroCard() {
                     open source. I believe great software isn’t just about
                     code—it’s about empowering people. That’s why I’ve
                     contributed to educational tools, led frontend initiatives,
-                    and mentored students through the NYCU Software Development
-                    Club, where I help run training programs and manage real
+                    and mentored students through the{" "}
+                    <a
+                        href="https://sdc.nycu.club"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        NYCU Software Development Club
+                    </a>
+                    , where I help run training programs and manage real
                     production projects.
                 </p>
                 <p className="mt-4">
