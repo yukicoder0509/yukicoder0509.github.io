@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import WelcomeTitle from "../components/Home/WelcomeTitle.tsx";
 import SelfIntroCard from "../components/Home/SelfIntroCard.tsx";
+import Contact from "../components/Home/Contact.tsx";
 
 export default function Homepage() {
     return (
@@ -15,6 +16,7 @@ export default function Homepage() {
                 <div className="mx-6 my-9 w-full md:mx-0">
                     <SelfIntroCard />
                 </div>
+                <Contact />
             </div>
         </>
     );
