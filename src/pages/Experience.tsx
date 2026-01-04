@@ -137,11 +137,17 @@ export default function Experience() {
 
 function GitHubLink({ url, display }: { url: string; display: string }) {
     return (
-        <div className="flex items-center gap-1">
-            <img src="/github-mark.svg" alt="GitHub Logo" className="size-4" />
-            <a href={url} target="_blank" rel="noopener noreferrer">
-                {display}
-            </a>
+        <div className="flex">
+            <div className="flex scale-none items-center gap-1 transition-all duration-75 hover:font-semibold">
+                <img
+                    src="/github-mark.svg"
+                    alt="GitHub Logo"
+                    className="size-4"
+                />
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                    {display}
+                </a>
+            </div>
         </div>
     );
 }

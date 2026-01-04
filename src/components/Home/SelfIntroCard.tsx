@@ -27,6 +27,7 @@ export default function SelfIntroCard() {
                         href="https://sdc.nycu.club"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="transition-all duration-75 hover:font-semibold"
                     >
                         NYCU Software Development Club
                     </a>
