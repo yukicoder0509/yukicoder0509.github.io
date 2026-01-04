@@ -15,6 +15,7 @@ export default function Experience() {
                         Ming Chiao Tung University (NYCU), Hsinchu, Taiwan
                     </li>
                 </ul>
+                <hr />
                 <h2 className="text-2xl font-semibold">Skills</h2>
                 <ul>
                     <li className="flex flex-col justify-between sm:flex-row">
@@ -39,48 +40,108 @@ export default function Experience() {
                         </span>
                     </li>
                 </ul>
+                <hr />
                 <h2 className="text-2xl font-semibold">Projects</h2>
-                <ul>
-                    <h2 className="mb-2.5 text-xl font-semibold">
-                        Clustron - A Heterogeneous Cluster Management Platform
-                    </h2>
-                    <ul>
-                        <li>
-                            {" "}
-                            Leading a team of 7 to develop a heterogeneous
-                            cluster management system used by students and
-                            professors.{" "}
-                        </li>
-                        <li className="flex items-center gap-1">
-                            <img
-                                src="/github-mark.svg"
-                                alt="GitHub Logo"
-                                className="size-4"
-                            />
-                            <a href="https://github.com/NYCU-SDC/clustron-frontend">
-                                Clustron Frontend
-                            </a>
-                        </li>
-                        <li className="flex items-center gap-1">
-                            <img
-                                src="/github-mark.svg"
-                                alt="GitHub Logo"
-                                className="size-4"
-                            />
-                            <a href="https://github.com/NYCU-SDC/clustron-backend">
-                                Clustron Backend
-                            </a>
-                        </li>
-                    </ul>
-                    <h2 className="mb-2.5 text-xl font-semibold">
-                        Summer - An Opensourced Go RESTful API Library
-                    </h2>
-                    <h2 className="mb-2.5 text-xl font-semibold">
-                        CommonGround - An Experimental Social Platform
-                    </h2>
+                <ul className="flex flex-col gap-4">
+                    <li>
+                        <h2 className="text-xl font-semibold">
+                            Clustron - A Heterogeneous Cluster Management
+                            Platform
+                        </h2>
+                        <p className="italic">
+                            Product manager, Full-stack developer
+                        </p>
+                        <ul>
+                            <li className="mb-2">
+                                Leading a team of 7 to develop a heterogeneous
+                                cluster management system used by students and
+                                professors.
+                            </li>
+                            <li>
+                                <GitHubLink
+                                    url="https://github.com/NYCU-SDC/clustron-frontend"
+                                    display="Clustron Frontend"
+                                />
+                            </li>
+                            <li>
+                                <GitHubLink
+                                    url="https://github.com/NYCU-SDC/clustron-backend"
+                                    display="Clustron Backend"
+                                />
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h2 className="text-xl font-semibold">
+                            Summer - An Opensourced Go RESTful API Library
+                        </h2>
+                        <p className="italic">Backend, Library Co-architect</p>
+                        <ul>
+                            <li className="mb-2">
+                                Co-architected a shared Go RESTful API library
+                                utilized by 4 internal club projects. Accelerate
+                                setup time by 80%.
+                            </li>
+                            <li>
+                                <GitHubLink
+                                    url="https://github.com/NYCU-SDC/summer"
+                                    display="Summer"
+                                />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 className="text-xl font-semibold">
+                            CommonGround - An Experimental Social Platform
+                        </h2>
+                        <p className="italic">Frontend Developer</p>
+                        <ul>
+                            <li className="mb-2">
+                                Developer friendly front-end architecture for a
+                                social platform using React/TypeScript,
+                                enhancing user interaction and component
+                                reusability.
+                            </li>
+                            <li>
+                                <GitHubLink
+                                    url="https://github.com/commonground-project/frontend"
+                                    display="CommonGround Frontend"
+                                />
+                            </li>
+                            <li>
+                                <GitHubLink
+                                    url="https://github.com/commonground-project/backend"
+                                    display="CommonGround Backend"
+                                />
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
+                <hr />
                 <h2 className="text-2xl font-semibold">Awards</h2>
+                <ul>
+                    <li>
+                        2025 3rd place out of 7 teams in the Meichu Hackathon
+                        (TSMC group)
+                    </li>
+                    <li>
+                        2024 Scholarship for Core Foundational Course
+                        Enrollment: Linear Algebra
+                    </li>
+                </ul>
             </div>
         </>
+    );
+}
+
+function GitHubLink({ url, display }: { url: string; display: string }) {
+    return (
+        <div className="flex items-center gap-1">
+            <img src="/github-mark.svg" alt="GitHub Logo" className="size-4" />
+            <a href={url} target="_blank" rel="noopener noreferrer">
+                {display}
+            </a>
+        </div>
     );
 }
